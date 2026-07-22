@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch - PolyTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>PolyTube</h1>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload</a>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2 id="vid-title">Video Title</h2>
+    <p id="vid-creator">Creator</p>
+    
+    <video id="main-video" controls></video>
+    
+    <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+      <button id="play-pause-btn">Pause</button>
+      <button id="back-btn"><< 5s</button>
+      <button id="forward-btn">5s >></button>
+      <button id="like-btn">Like (<span id="likes-count">0</span>)</button>
+      <button id="follow-btn">Follow</button>
+    </div>
+  </div>
+
+  <script src="video.js"></script>
+</body>
+</html>
